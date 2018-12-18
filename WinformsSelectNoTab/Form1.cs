@@ -16,5 +16,15 @@ namespace WinformsSelectNoTab
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = -1;
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = -1;
+        }
     }
 }
